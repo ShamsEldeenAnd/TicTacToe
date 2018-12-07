@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#b2c1a6"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:fontFamily="casual"
+        android:gravity="center"
+        android:text="X O Play"
+        android:textColor="#1c6128"
+        android:textSize="35sp"
+        android:textStyle="bold" />
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/cell_1"
+                style="@style/ButtonStyle"
+                android:onClick="butSelect" />
+
+            <Button
+                android:id="@+id/cell_2"
+                style="@style/ButtonStyle"
+                android:onClick="butSelect" />
+
+            <Button
+                android:id="@+id/cell_3"
+                style="@style/ButtonStyle"
+                android:onClick="butSelect" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/cell_4"
+                style="@style/ButtonStyle"
+                android:onClick="butSelect" />
+
+            <Button
+                android:id="@+id/cell_5"
+                style="@style/ButtonStyle"
+                android:onClick="butSelect" />
+
+            <Button
+                android:id="@+id/cell_6"
+                style="@style/ButtonStyle"
+                android:onClick="butSelect" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/cell_7"
+                style="@style/ButtonStyle"
+                android:onClick="butSelect" />
+
+            <Button
+                android:id="@+id/cell_8"
+                style="@style/ButtonStyle"
+                android:onClick="butSelect" />
+
+            <Button
+                android:id="@+id/cell_9"
+                style="@style/ButtonStyle"
+                android:onClick="butSelect" />
+        </TableRow>
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="20dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/x_score"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="casual"
+            android:text="X Player score : 0.0"
+            android:textColor="#a61d1d"
+            android:textStyle="bold"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/o_score"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:textColor="#275122"
+            android:fontFamily="casual"
+            android:text="O Player score : 0.0 "
+            android:textSize="17sp" />
+    </LinearLayout>
+</RelativeLayout>
